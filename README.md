@@ -23,7 +23,7 @@ Nesse projeto foi desenvolvido (através da Next Level Week #5 da [RocketSeat](h
 
 ## 📂 Outras tecnologias/técnicas
 
-- Front-End: [share_plus](https://pub.dev/packages/share_plus);
+- Packages: [share_plus](https://pub.dev/packages/share_plus);
 
 ## 👨‍💻 Minha experiência
 
