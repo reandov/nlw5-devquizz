@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:learn_flutter/core/core.dart';
 import 'package:learn_flutter/home/home_repository.dart';
 import 'package:learn_flutter/home/home_state.dart';
-import 'package:learn_flutter/shared/models/awnser_model.dart';
-import 'package:learn_flutter/shared/models/question_model.dart';
 import 'package:learn_flutter/shared/models/quiz_model.dart';
 import 'package:learn_flutter/shared/models/user_model.dart';
 

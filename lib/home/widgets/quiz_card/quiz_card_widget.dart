@@ -4,6 +4,7 @@ import 'package:learn_flutter/core/core.dart';
 import 'package:learn_flutter/shared/widgets/progress_indicator/progress_indicator_widget.dart';
 
 class QuizCardWidget extends StatelessWidget {
+  final String image;
   final String title;
   final String completed;
   final double percent;
@@ -15,6 +16,7 @@ class QuizCardWidget extends StatelessWidget {
     required this.completed,
     required this.percent,
     required this.onTap,
+    required this.image,
   }) : super(key: key);
 
   @override
@@ -27,6 +29,14 @@ class QuizCardWidget extends StatelessWidget {
           border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
           color: AppColors.white,
           borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.15),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(0, 3), // changes position of shadow
+            ),
+          ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +44,7 @@ class QuizCardWidget extends StatelessWidget {
             Container(
               height: 40,
               width: 40,
-              child: Image.asset(AppImages.blocks),
+              child: Image.asset("assets/images/$image.png"),
             ),
             SizedBox(
               height: 20,
